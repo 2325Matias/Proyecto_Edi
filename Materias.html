@@ -43,7 +43,7 @@
                                 <option value="administracion">Tecnicatura Superior en Administración Pública</option>
                                 <option value="enfermeria">Tecnicatura Superior en Enfermería</option>
                             </select>
-                            <label for="name">materias</label>
+                            <label for="name">Carrera:</label>
                         </div>
                     </div>
                 </div>
@@ -324,14 +324,14 @@
                     <div class="col-6">
                         <div class="form-floating mb-3">
                             <input class="form-control" name="MateriasAdeuda" id="MateriasAdeuda" type="number"
-                                placeholder="Ingrese cantidad de materias" />
+                                placeholder="Ingrese cantidad de materias" required />
                             <label for="name">Cuantas materias debe?</label>
                         </div>
                     </div>
                     <div class="col-6">
                         <div class="form-floating mb-3">
                             <input class="form-control" name="DescripcionMaterias" id="DescripcionMaterias" type="text"
-                                placeholder="Ingrese cuales" />
+                                placeholder="Ingrese cuales" required />
                             <label for="email">Cuales deben?</label>
                         </div>
                     </div>
@@ -341,14 +341,14 @@
                     <div class="col-6">
                         <div class="form-floating mb-3">
                             <input class="form-control" name="Titulo" id="Titulo" type="text"
-                                placeholder="Ingrese Titulo" />
+                                placeholder="Ingrese Titulo" required />
                             <label for="name">Titulo</label>
                         </div>
                     </div>
                     <div class="col-6">
                         <div class="form-floating mb-3">
                             <input class="form-control" name="Orientacion" id="Orientacion" type="text"
-                                placeholder="Orientacion" />
+                                placeholder="Orientacion" required />
                             <label for="email">Orientacion</label>
                         </div>
                     </div>
@@ -358,21 +358,21 @@
                     <div class="col-4">
                         <div class="form-floating mb-3">
                             <input class="form-control" name="OtorgadoPor" id="OtorgadoPor" type="text"
-                                placeholder="Ingrese Titulo" />
+                                placeholder="Ingrese Titulo" required />
                             <label for="name">Otorgado Por:</label>
                         </div>
                     </div>
                     <div class="col-4">
                         <div class="form-floating mb-3">
                             <input class="form-control" name="AñodeEgreso" id="AñodeEgreso" type="number"
-                                placeholder="Orientacion" />
+                                placeholder="Orientacion" required />
                             <label for="email">Año de Egreso:</label>
                         </div>
                     </div>
                     <div class="col-4">
                         <div class="form-floating mb-3">
                             <input class="form-control" name="Promedio" id="Promedio" type="number"
-                                placeholder="Orientacion" />
+                                placeholder="Orientacion" required />
                             <label for="email">Promedio:</label>
                         </div>
                     </div>
@@ -413,21 +413,21 @@
                     <div class="col-4">
                         <div class="form-floating mb-3">
                             <input class="form-control" name="OtroTitulo" id="OtroTitulo" type="text"
-                                placeholder="Ingrese Titulo" />
+                                placeholder="Ingrese Titulo" required />
                             <label for="name">Otro Titulo::</label>
                         </div>
                     </div>
                     <div class="col-4">
                         <div class="form-floating mb-3">
                             <input class="form-control" name="OtorgadoPor" id="OtorgadoPor" type="number"
-                                placeholder="Orientacion" />
+                                placeholder="Orientacion" required />
                             <label for="email">Otorgado Por:</label>
                         </div>
                     </div>
                     <div class="col-4">
                         <div class="form-floating mb-3">
                             <input class="form-control" name="Promedio2" id="Promedio2" type="number"
-                                placeholder="Orientacion" />
+                                placeholder="Orientacion" required />
                             <label for="email">Promedio:</label>
                         </div>
                     </div>
@@ -643,7 +643,7 @@
                     <div class="col-12">
                         <div class="form-floating mb-3">
                             <input class="form-control" name="OtroSector" id="OtroSector" type="text"
-                                placeholder="Especificar otro Sector" />
+                                placeholder="Especificar otro Sector" required />
                             <label for="name">Especificar otro Sector:</label>
                         </div>
                     </div>
@@ -695,22 +695,22 @@
                             <label for="vivesoloNO">NO</label>
                         </div>
                     </div>
-                    <div class="col-6 d-grid justify-content-start ">
+                    <div class="col-6 d-grid justify-content-start " required>
                         <label class="d-block mb-3">Vive con:</label>
                         <div class="d-inline mb-3">
-                            <input class="form" name="Padres" id="Padres" type="checkbox" value="0" />
+                            <input class="form" name="ViveCon" id="Padres" type="checkbox" value="0" />
                             <label class="form" for="Padres">Con sus Padres</label>
                         </div>
                         <div class="d-inline mb-3">
-                            <input class="form" name="Conyugue" id="Conyugue" type="checkbox" value="1" />
+                            <input class="form" name="ViveCon" id="Conyugue" type="checkbox" value="1" />
                             <label for="Conyugue">Con Conyugue o conviviente</label>
                         </div>
                         <div class="d-inline mb-3">
-                            <input class="form" name="Con_Hijos" id="Con_Hijos" type="checkbox" value="2" />
+                            <input class="form" name="ViveCon" id="Con_Hijos" type="checkbox" value="2" />
                             <label for="Con_Hijos">Con Hijos</label>
                         </div>
                         <div class="d-inline mb-3">
-                            <input class="form" name="Otros" id="Otros" type="checkbox" value="3" />
+                            <input class="form" name="ViveCon" id="Otros" type="checkbox" value="3" />
                             <label for="Otros">Otros</label>
                         </div>
                     </div>
@@ -729,18 +729,18 @@
                             <label for="familiar_Cargo_no">NO</label>
                         </div>
                     </div>
-                    <div class="col-6 d-grid justify-content-start ">
+                    <div class="col-6 d-grid justify-content-start " required>
                         <label class="d-block mb-3">A cargo de:</label>
                         <div class="d-inline mb-3">
-                            <input class="form" name="cargoPadres" id="cargoPadres" type="checkbox" value="0" />
+                            <input class="form" name="Acargo" id="cargoPadres" type="checkbox" value="0" />
                             <label class="form" for="cargoPadres">Padres</label>
                         </div>
                         <div class="d-inline mb-3">
-                            <input class="form" name="cargoHijos" id="cargoHijos" type="checkbox" value="2" />
+                            <input class="form" name="Acargo" id="cargoHijos" type="checkbox" value="2" />
                             <label for="cargoHijos">Hijos</label>
                         </div>
                         <div class="d-inline mb-3">
-                            <input class="form" name="cargoOtros" id="cargoOtros" type="checkbox" value="3" />
+                            <input class="form" name="Acargo" id="cargoOtros" type="checkbox" value="3" />
                             <label for="cargoOtros">Otros</label>
                         </div>
                     </div>
@@ -753,50 +753,46 @@
                     <div class="col-12 ">
                         <label class="d-block mb-3">¿Tiene alguna Beca o Programa?</label>
                         <div class="d-inline mb-3">
-                            <input class="form-check-input" name="Educacion" id="Educacion" type="checkbox" value="0" />
+                            <input class="form-check-input" name="ninguno" id="ninguno" type="checkbox" value="0"
+                                onchange="toggleCheckboxes(this)" />
                             <label class="form-check-label">Ninguno</label>
                         </div>
                         <div class="d-inline mb-3 mx-5">
-                            <input class="form-check-input" name="SectorPúblico" id="SectorPúblico" type="checkbox"
-                                value="1" />
+                            <input class="form-check-input" name="INFD" id="INFD" type="checkbox" value="1" />
                             <label for="form-check-label">Estímulos económicos (INFD)</label>
                         </div>
                         <div class="d-inline mb-3">
-                            <input class="form-check-input" name="PrimariaCompleta" id="PrimariaCompleta"
-                                type="checkbox" value="2" />
+                            <input class="form-check-input" name="Bicentenario" id="Bicentenario" type="checkbox"
+                                value="2" />
                             <label for="form-check-label">Becas Bicentenario.</label>
                         </div>
                         <div class="d-inline mb-3 mx-5">
-                            <input class="form-check-input" name="Turismo" id="Turismo" type="checkbox" value="3" />
+                            <input class="form-check-input" name="Pueblos" id="Pueblos" type="checkbox" value="3" />
                             <label class="form-check-label">Pueblos originarios</label>
                         </div>
                         <div class="d-inline mb-3">
-                            <input class="form-check-input" name="SectorAgropecuario" id="SectorAgropecuario"
-                                type="checkbox" value="4" />
+                            <input class="form-check-input" name="Progresar" id="Progresar" type="checkbox" value="4" />
                             <label for="form-check-label">Progresar</label>
                         </div>
                         <br>
                         <div class="d-inline mb-3">
-                            <input class="form-check-input" name="Educacion" id="Educacion" type="checkbox" value="0" />
+                            <input class="form-check-input" name="AUH" id="AUH" type="checkbox" value="5" />
                             <label class="form-check-label">AUH</label>
                         </div>
                         <div class="d-inline mb-3 mx-5">
-                            <input class="form-check-input" name="SectorPúblico" id="SectorPúblico" type="checkbox"
-                                value="1" />
+                            <input class="form-check-input" name="docente" id="docente" type="checkbox" value="6" />
                             <label for="form-check-label">Compromiso docente</label>
                         </div>
                         <div class="d-inline mb-3">
-                            <input class="form-check-input" name="PrimariaCompleta" id="PrimariaCompleta"
-                                type="checkbox" value="2" />
+                            <input class="form-check-input" name="Envion" id="Envion" type="checkbox" value="7" />
                             <label for="form-check-label">Programa Envión</label>
                         </div>
                         <div class="d-inline mb-3 mx-5">
-                            <input class="form-check-input" name="Turismo" id="Turismo" type="checkbox" value="3" />
+                            <input class="form-check-input" name="Argentina" id="Argentina" type="checkbox" value="8" />
                             <label class="form-check-label">Argentina trabaja</label>
                         </div>
                         <div class="d-inline mb-3">
-                            <input class="form-check-input" name="SectorAgropecuario" id="SectorAgropecuario"
-                                type="checkbox" value="4" />
+                            <input class="form-check-input" name="Ellas" id="Ellas" type="checkbox" value="9" />
                             <label for="form-check-label">Ellas hacen</label>
                         </div>
                     </div>
@@ -879,7 +875,7 @@
                         </div>
                     </div>
                     <!--tipo lectura-->
-                    <div class="col-6 d-grid justify-content-center ">
+                    <div class="col-6 d-grid justify-content-center">
                         <label class="d-block mb-3">Tipo de lectura frecuente:</label>
                         <div class="d-inline mb-3">
                             <input class="form" name="Diarios" id="Diarios" type="checkbox" value="0" />
@@ -920,7 +916,7 @@
                         </div>
                     </div>
                     <!--donde utiliza internet-->
-                    <div class="col-6  justify-content-center ">
+                    <div class="col-6  justify-content-center">
                         <label class="d-block mb-3">¿Dónde utiliza Internet?</label>
                         <div class="d-inline mb-3">
                             <input class="form" name="Hogar" id="Hogar" type="checkbox" value="0" />
@@ -1186,7 +1182,7 @@
                     <div class="col-12">
                         <div class="form-floating mb-3">
                             <input class="form-control" name="Contacto_Emergencia" id="Contacto_Emergencia" type="text"
-                                placeholder="Contacto_Emergencia:" />
+                                placeholder="Contacto_Emergencia:" required />
                             <label for="name">Contacto en Caso de Emergencia:</label>
                         </div>
                     </div>
@@ -1196,15 +1192,15 @@
                     <div class="col-12">
                         <div class="form-floating mb-3">
                             <input class="form-control" name="tel_contacto" id="tel_contacto" type="text"
-                                placeholder="tel_contacto" />
+                                placeholder="tel_contacto" required />
                             <label for="name">Teléfono de Contacto:</label>
                         </div>
                     </div>
                 </div>
 
-                <div class="d-flex justify-content-center m-3"> 
+                <div class="d-flex justify-content-center m-3">
                     <button type="submit" class="btn btn-primary">Inscribirse</button>
-                </div> 
+                </div>
 
             </form>
         </div>
