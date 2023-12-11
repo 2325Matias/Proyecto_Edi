@@ -1,0 +1,1169 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Instituto N°93 San Vicente</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/img/logo.png" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body>
+    <section class="page-section" id="contact">
+        <div class="container px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-lg-8 col-xl-6 text-center">
+                    <a class="navbar-brand" href="/index.html">
+                        <img src="/assets/img/logo.png" alt="logo">
+                    </a>
+
+                    <h2 class="mt-3">Inscribite a la carrera!</h2>
+                    <hr class="divider" />
+                    <p class="text-muted mb-5">Estas listo para comenzar con tu futuro?, preparate soldado.</p>
+                </div>
+            </div>
+
+            <form id="contactForm">
+                <div class="row gx-4 gx-lg-5 justify-content-center mb-5">
+                    <div class="col-6">
+                        <div class="form-floating mb-3">
+                            <select class="form-select" name="CarreraId" id="CarreraId">
+                                <option>Seleccione Carrera</option>
+                                <option value="1">Tecnicatura Superior en Análisis, Desarrollo y Programación de
+                                    Aplicaciones</option>
+                                <option value="2">Tecnicatura Superior en Guía de Turismo</option>
+                                <option value="3">Tecnicatura Superior en Administración Contable</option>
+                                <option value="4">Tecnicatura Superior en Administración con Orientación en Marketing
+                                </option>
+                                <option value="5">Tecnicatura Superior en Administración Pública</option>
+                                <option value="6">Tecnicatura Superior en Enfermería</option>
+                            </select>
+                            <label for="name">Carrera</label>
+                        </div>
+                    </div>
+                </div>
+
+                <h4 class="mb-3">Datos del Alumno</h4>
+
+                <div class="row gx-4 gx-lg-5 justify-content-center mb-3">
+                    <div class="col-6">
+                        <div class="form-floating mb-3">
+                            <input class="form-control" name="Apellido" id="Apellido" type="text"
+                                placeholder="Ingrese su apellido" required />
+                            <label for="name">Apellido</label>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="form-floating mb-3">
+                            <input class="form-control" name="Nombre" id="Nombre" type="text" placeholder="Apellido"
+                                required />
+                            <label for="email">Nombre</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row gx-4 gx-lg-5 justify-content-center mb-3">
+                    <div class="col-6">
+                        <div class="form-floating mb-3">
+                            <select class="form-select" name="TipoDocumentoId" id="TipoDocumentoId" required>
+                                <option>Seleccione Tipo Documento</option>
+                                <option value="1">DNI</option>
+                                <option value="2">CUIL</option>
+                                <option value="3">LC</option>
+                            </select>
+                            <label for="name">Tipo Documento</label>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="form-floating mb-3">
+                            <input class="form-control" name="Documento" id="Documento" type="text"
+                                placeholder="Documento" required />
+                            <label for="email">Documento</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row gx-4 gx-lg-5 justify-content-center mb-3">
+                    <div class="col-6">
+                        <div class="form-floating mb-3">
+                            <select class="form-select" name="EstadoCivilId" id="EstadoCivilId">
+                                <option>Seleccione Estado Civil</option>
+                                <option value="1">Soltero/a</option>
+                                <option value="2">Casado/a</option>
+                            </select>
+                            <label for="name">Estado Civil</label>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="form-floating mb-3">
+                            <select class="form-select" name="SexoId" id="SexoId">
+                                <option>Seleccione Sexo</option>
+                                <option value="1">Masculino</option>
+                                <option value="2">Femenino</option>
+                                <option value="3">Binario</option>
+                            </select>
+                            <label for="name">Sexo</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row gx-4 gx-lg-5 justify-content-center mb-3">
+                    <div class="col-4">
+                        <div class="form-floating mb-3">
+                            <input type="date" class="form-control valid" name="FechaNacimiento" required />
+                            <label for="FechaNacimiento">Fecha Nacimiento</label>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="form-floating mb-3">
+                            <select class="form-select" name="LocalidadNacimientoId" id="LocalidadNacimientoId">
+                                <option>Seleccione Localidad de Nacimiento</option>
+                                <option value="1">San Vicente</option>
+                                <option value="2">Alejandro Korn</option>
+                                <option value="3">Guernica</option>
+                                <option value="4">Glew</option>
+                                <option value="5">Longchamps</option>
+                                <option value="6">Burzaco</option>
+                                <option value="7">Adrogue</option>
+                            </select>
+                            <label for="name">Localidad de Nacimiento</label>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="form-floating mb-3">
+                            <select class="form-select" name="NacionalidadId" id="NacionalidadId">
+                                <option>Seleccione Nacionalidad</option>
+                                <option value="1">Argentina</option>
+                                <option value="2">Paraguay</option>
+                                <option value="3">Uruguay</option>
+                                <option value="4">Brasil</option>
+                                <option value="5">Bolivia</option>
+                                <option value="6">Chile</option>
+                                <option value="7">Venezuela</option>
+                            </select>
+                            <label for="name">Nacionalidad</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row gx-4 gx-lg-5 justify-content-center mb-3">
+                    <div class="col-3">
+                        <div class="form-floating mb-3">
+                            <input class="form-control" name="Calle" id="Calle" type="text" placeholder="Calle" />
+                            <label for="name">Calle</label>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="form-floating mb-3">
+                            <input class="form-control" name="Altura" id="Altura" type="number" placeholder="Altura" />
+                            <label for="email">Altura</label>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="form-floating mb-3">
+                            <input class="form-control" name="Piso" id="Piso" type="text" placeholder="Pisoo" />
+                            <label for="name">Piso</label>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="form-floating mb-3">
+                            <input class="form-control" name="Departamento" id="Departamento" type="text"
+                                placeholder="Departamento" />
+                            <label for="email">Departamento</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row gx-4 gx-lg-5 justify-content-center mb-3">
+                    <div class="col-6">
+                        <div class="form-floating mb-3">
+                            <select class="form-select" name="ProvinciaId" id="ProvinciaId">
+                                <option>Seleccione Provincia</option>
+                                <option value="1">Buenos Aires</option>
+                                <option value="2">Catamarca</option>
+                                <option value="3">Chaco</option>
+                                <option value="4">Chubut</option>
+                                <option value="5">Córdoba</option>
+                                <option value="6">Corrientes</option>
+                                <option value="7">Entre Ríos</option>
+                                <option value="8">Formosa</option>
+                                <option value="9">Jujuy</option>
+                                <option value="10">Mendoza</option>
+                                <option value="11">Misiones</option>
+                                <option value="12">Neuquén</option>
+                                <option value="13">Río Negro</option>
+                            </select>
+                            <label for="name">Provincia</label>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="form-floating mb-3">
+                            <input class="form-control" name="Distrito" id="Distrito" type="text"
+                                placeholder="Distrito" />
+                            <label for="email">Distrito</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row gx-4 gx-lg-5 justify-content-center mb-3">
+                    <div class="col-6">
+                        <div class="form-floating mb-3">
+                            <select class="form-select" name="LocalidadId" id="LocalidadId">
+                                <option>Seleccione Localidad</option>
+                                <option value="1">San Vicente</option>
+                                <option value="2">Alejandro Korn</option>
+                                <option value="3">Guernica</option>
+                                <option value="4">Glew</option>
+                                <option value="5">Longchamps</option>
+                                <option value="6">Burzaco</option>
+                                <option value="7">Adrogue</option>
+                            </select>
+                            <label for="name">Localidad</label>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="form-floating mb-3">
+                            <input class="form-control" name="CodigoPostal" id="CodigoPostal" type="text"
+                                placeholder="Distrito" />
+                            <label for="email">Codigo Postal</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row gx-4 gx-lg-5 justify-content-center mb-3">
+                    <div class="col-4">
+                        <div class="form-floating mb-3">
+                            <input class="form-control" name="Telefono" id="Telefono" type="text"
+                                placeholder="Telefono" />
+                            <label for="name">Telefono</label>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="form-floating mb-3">
+                            <input class="form-control" name="Celular" id="Celular" type="text" placeholder="Celular" />
+                            <label for="email">Celular</label>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="form-floating mb-3">
+                            <input class="form-control" name="Email" id="Email" type="text" placeholder="Email" />
+                            <label for="name">Email</label>
+                        </div>
+                    </div>
+                </div>
+
+                <h4 class="mb-3">Formacion</h4>
+
+                <!--titulo secundario-->
+                <div class="row gx-4 gx-lg-5 justify-content-start mb-3">
+                    <div class="col-6 ">
+                        <label class="d-block mb-3">¿Tiene Titulo Secundario?</label>
+                        <div class="d-inline mb-3">
+                            <input class="form" name="TituloSecundario" id="TituloSecundarioSI" type="radio"
+                                value="1" />
+                            <label for="TituloSecundarioSI">SI</label>
+                        </div>
+
+                        <div class="d-inline mb-3">
+                            <input class="form" name="TituloSecundario" id="TituloSecundarioNO" type="radio" value="0"
+                                checked />
+                            <label for="TituloSecundarioNO">NO</label>
+                        </div>
+                    </div>
+                </div>
+                <!--debe materias-->
+                <div class="row gx-4 gx-lg-5 justify-content-center mb-3 form-section">
+                    <div class="col-6">
+                        <div class="form-floating mb-3">
+                            <input class="form-control" name="MateriasAdeuda" id="MateriasAdeuda" type="number"
+                                placeholder="Ingrese cantidad de materias" />
+                            <label for="name">Cuantas materias debe?</label>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="form-floating mb-3">
+                            <input class="form-control" name="DescripcionMaterias" id="DescripcionMaterias" type="text"
+                                placeholder="Ingrese cuales" />
+                            <label for="email">Cuales deben?</label>
+                        </div>
+                    </div>
+                </div>
+                <!--titulo, orientacion-->
+                <div class="row gx-4 gx-lg-5 justify-content-center mb-3 form-section">
+                    <div class="col-6">
+                        <div class="form-floating mb-3">
+                            <input class="form-control" name="Titulo" id="Titulo" type="text"
+                                placeholder="Ingrese Titulo" />
+                            <label for="name">Titulo</label>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="form-floating mb-3">
+                            <input class="form-control" name="Orientacion" id="Orientacion" type="text"
+                                placeholder="Orientacion" />
+                            <label for="email">Orientacion</label>
+                        </div>
+                    </div>
+                </div>
+                <!--otorgado, egreso, promedio-->
+                <div class="row gx-4 gx-lg-5 justify-content-center mb-3 form-section">
+                    <div class="col-4">
+                        <div class="form-floating mb-3">
+                            <input class="form-control" name="OtorgadoPor" id="OtorgadoPor" type="text"
+                                placeholder="Ingrese Titulo" />
+                            <label for="name">Otorgado Por:</label>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="form-floating mb-3">
+                            <input class="form-control" name="AñodeEgreso" id="AñodeEgreso" type="number"
+                                placeholder="Orientacion" />
+                            <label for="email">Año de Egreso:</label>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="form-floating mb-3">
+                            <input class="form-control" name="Promedio" id="Promedio" type="number"
+                                placeholder="Orientacion" />
+                            <label for="email">Promedio:</label>
+                        </div>
+                    </div>
+                </div>
+                <!--titulo tramite-->
+                <div class="row gx-4 gx-lg-5 justify-content-start mb-3">
+                    <div class="col-6 d-grid justify-content-center">
+                        <label class="d-block mb-3">¿Tiene Titulo en Tramite?</label>
+                        <div class="d-inline mb-3">
+                            <input class="form" name="TituloTramite" id="TituloTramiteSI" type="radio" value="1" />
+                            <label for="TituloTramiteSI">SI</label>
+                        </div>
+
+                        <div class="d-inline mb-3">
+                            <input class="form" name="TituloTramite" id="TituloTramiteNO" type="radio" value="0"
+                                checked />
+                            <label for="TituloTramiteNO">NO</label>
+                        </div>
+                    </div>
+                    <div class="col-4 d-grid justify-content-start ">
+                        <label class="d-block mb-3">Mayor Titulo</label>
+                        <div class="d-inline mb-3">
+                            <input class="form" name="Terciario" id="Terciario" type="checkbox" value="0" />
+                            <label class="form" for="Terciario">Terciario</label>
+                        </div>
+                        <div class="d-inline mb-3">
+                            <input class="form" name="Universitario" id="Universitario" type="checkbox" value="1" />
+                            <label for="Universitario">Universitario</label>
+                        </div>
+                        <div class="d-inline mb-3">
+                            <input class="form" name="Posgrado" id="Posgrado" type="checkbox" value="2" />
+                            <label for="Posgrado">Posgrado</label>
+                        </div>
+                    </div>
+                </div>
+                <!--titulo, otorgado, promedio-->
+                <div class="row gx-4 gx-lg-5 justify-content-center mb-3 form-section">
+                    <div class="col-4">
+                        <div class="form-floating mb-3">
+                            <input class="form-control" name="OtroTitulo" id="OtroTitulo" type="text"
+                                placeholder="Ingrese Titulo" />
+                            <label for="name">Otro Titulo::</label>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="form-floating mb-3">
+                            <input class="form-control" name="OtorgadoPor" id="OtorgadoPor" type="number"
+                                placeholder="Orientacion" />
+                            <label for="email">Otorgado Por:</label>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="form-floating mb-3">
+                            <input class="form-control" name="Promedio2" id="Promedio2" type="number"
+                                placeholder="Orientacion" />
+                            <label for="email">Promedio:</label>
+                        </div>
+                    </div>
+                </div>
+                <!--educacion padre-->
+                <div class="row gx-4 gx-lg-5 justify-content-start mb-3">
+                    <div class="col-12 ">
+                        <label class="d-block mb-3">Mayor Nivel Educativo del Padre:</label>
+                        <div class="d-inline mb-3">
+                            <input class="form-check-input" name="NuncaAsistio" id="NuncaAsistio" type="checkbox"
+                                value="0" />
+                            <label class="form-check-label">Nunca Asistio</label>
+                        </div>
+                        <div class="d-inline mb-3 mx-5">
+                            <input class="form-check-input" name="PrimariaIncompleta" id="PrimariaIncompleta"
+                                type="checkbox" value="1" />
+                            <label for="form-check-label">Primaria Incompleta</label>
+                        </div>
+                        <div class="d-inline mb-3">
+                            <input class="form-check-input" name="PrimariaCompleta" id="PrimariaCompleta"
+                                type="checkbox" value="2" />
+                            <label for="form-check-label">Primaria Completa</label>
+                        </div>
+                        <div class="d-inline mb-3 mx-5">
+                            <input class="form-check-input" name="SecundariaIncompleta" id="SecundariaIncompleta"
+                                type="checkbox" value="3" />
+                            <label class="form-check-label">Secundaria Incompleta</label>
+                        </div>
+                        <div class="d-inline mb-3">
+                            <input class="form-check-input" name="SecundariaCompleta" id="SecundariaCompleta"
+                                type="checkbox" value="4" />
+                            <label for="form-check-label">Secundaria Completa</label>
+                        </div>
+                        <br>
+                        <div class="d-inline mb-3">
+                            <input class="form-check-input" name="TerciarioIncompleto" id="TerciarioIncompleto"
+                                type="checkbox" value="5" />
+                            <label for="form-check-label">Terciario Incompleto</label>
+                        </div>
+                        <div class="d-inline mb-3 mx-5">
+                            <input class="form-check-input" name="TerciarioCompleto" id="TerciarioCompleto"
+                                type="checkbox" value="6" />
+                            <label class="form-check-label">Terciario Completo</label>
+                        </div>
+                        <div class="d-inline mb-3">
+                            <input class="form-check-input" name="UniversitarioIncompleto" id="UniversitarioIncompleto"
+                                type="checkbox" value="7" />
+                            <label for="form-check-label">Universitario Incompleto</label>
+                        </div>
+                        <div class="d-inline mb-3 mx-5">
+                            <input class="form-check-input" name="UniversitarioCompleto" id="UniversitarioCompleto"
+                                type="checkbox" value="8" />
+                            <label for="form-check-label">Universitario Completo</label>
+                        </div>
+                        <div class="d-inline mb-3">
+                            <input class="form-check-input" name="NoSabe" id="NoSabe" type="checkbox" value="9" />
+                            <label class="form-check-label">No Sabe / No Contesta</label>
+                        </div>
+                    </div>
+                </div>
+                <!--educacion madre-->
+                <div class="row gx-4 gx-lg-5 justify-content-start mb-3">
+                    <div class="col-12 ">
+                        <label class="d-block mb-3">Mayor Nivel Educativo de la Madre:</label>
+                        <div class="d-inline mb-3">
+                            <input class="form-check-input" name="NuncaAsistio" id="NuncaAsistio" type="checkbox"
+                                value="0" />
+                            <label class="form-check-label">Nunca Asistio</label>
+                        </div>
+                        <div class="d-inline mb-3 mx-5">
+                            <input class="form-check-input" name="PrimariaIncompleta" id="PrimariaIncompleta"
+                                type="checkbox" value="1" />
+                            <label for="form-check-label">Primaria Incompleta</label>
+                        </div>
+                        <div class="d-inline mb-3">
+                            <input class="form-check-input" name="PrimariaCompleta" id="PrimariaCompleta"
+                                type="checkbox" value="2" />
+                            <label for="form-check-label">Primaria Completa</label>
+                        </div>
+                        <div class="d-inline mb-3 mx-5">
+                            <input class="form-check-input" name="SecundariaIncompleta" id="SecundariaIncompleta"
+                                type="checkbox" value="3" />
+                            <label class="form-check-label">Secundaria Incompleta</label>
+                        </div>
+                        <div class="d-inline mb-3">
+                            <input class="form-check-input" name="SecundariaCompleta" id="SecundariaCompleta"
+                                type="checkbox" value="4" />
+                            <label for="form-check-label">Secundaria Completa</label>
+                        </div>
+                        <br>
+                        <div class="d-inline mb-3">
+                            <input class="form-check-input" name="TerciarioIncompleto" id="TerciarioIncompleto"
+                                type="checkbox" value="5" />
+                            <label for="form-check-label">Terciario Incompleto</label>
+                        </div>
+                        <div class="d-inline mb-3 mx-5">
+                            <input class="form-check-input" name="TerciarioCompleto" id="TerciarioCompleto"
+                                type="checkbox" value="6" />
+                            <label class="form-check-label">Terciario Completo</label>
+                        </div>
+                        <div class="d-inline mb-3">
+                            <input class="form-check-input" name="UniversitarioIncompleto" id="UniversitarioIncompleto"
+                                type="checkbox" value="7" />
+                            <label for="form-check-label">Universitario Incompleto</label>
+                        </div>
+                        <div class="d-inline mb-3 mx-5">
+                            <input class="form-check-input" name="UniversitarioCompleto" id="UniversitarioCompleto"
+                                type="checkbox" value="8" />
+                            <label for="form-check-label">Universitario Completo</label>
+                        </div>
+                        <div class="d-inline mb-3">
+                            <input class="form-check-input" name="NoSabe" id="NoSabe" type="checkbox" value="9" />
+                            <label class="form-check-label">No Sabe / No Contesta</label>
+                        </div>
+                    </div>
+                </div>
+
+                <h4 class="mb-3">Trayectoria Ocupacional</h4>
+
+                <!--trabaja?-->
+                <div class="row gx-4 gx-lg-5 justify-content-start mb-3">
+                    <div class="col-6 ">
+                        <label class="d-block mb-3">¿Trabaja Actualmente?</label>
+                        <div class="d-inline mb-3">
+                            <input class="form" name="TrabajaActualmente" id="TrabajaActualmenteSI" type="radio"
+                                value="1" />
+                            <label for="TrabajaActualmenteSI">SI</label>
+                        </div>
+
+                        <div class="d-inline mb-3">
+                            <input class="form" name="TrabajaActualmente" id="TrabajaActualmenteNO" type="radio"
+                                value="0" checked />
+                            <label for="TrabajaActualmenteNO">NO</label>
+                        </div>
+                    </div>
+                </div>
+                <!--Sector-->
+                <div class="row gx-4 gx-lg-5 justify-content-start mb-3">
+                    <div class="col-12 ">
+                        <label class="d-block mb-3">Sector de Trabajo:</label>
+                        <div class="d-inline mb-3">
+                            <input class="form-check-input" name="Educacion" id="Educacion" type="checkbox" value="0" />
+                            <label class="form-check-label">Educación</label>
+                        </div>
+                        <div class="d-inline mb-3 mx-5">
+                            <input class="form-check-input" name="SectorPúblico" id="SectorPúblico" type="checkbox"
+                                value="1" />
+                            <label for="form-check-label">Gob. Sector Público</label>
+                        </div>
+                        <div class="d-inline mb-3">
+                            <input class="form-check-input" name="PrimariaCompleta" id="PrimariaCompleta"
+                                type="checkbox" value="2" />
+                            <label for="form-check-label">Servicio Financiero</label>
+                        </div>
+                        <div class="d-inline mb-3 mx-5">
+                            <input class="form-check-input" name="Turismo" id="Turismo" type="checkbox" value="3" />
+                            <label class="form-check-label">Turismo</label>
+                        </div>
+                        <div class="d-inline mb-3">
+                            <input class="form-check-input" name="SectorAgropecuario" id="SectorAgropecuario"
+                                type="checkbox" value="4" />
+                            <label for="form-check-label">Sector Agropecuario</label>
+                        </div>
+                        <br>
+                        <div class="d-inline mb-3">
+                            <input class="form-check-input" name="Comercio" id="Comercio" type="checkbox" value="5" />
+                            <label for="form-check-label">Comercio</label>
+                        </div>
+                        <div class="d-inline mb-3 mx-5">
+                            <input class="form-check-input" name="Empresa" id="Empresa" type="checkbox" value="5" />
+                            <label for="form-check-label">Empresa</label>
+                        </div>
+                        <div class="d-inline mb-3">
+                            <input class="form-check-input" name="Servicios" id="Servicios" type="checkbox" value="6" />
+                            <label class="form-check-label">Servicios</label>
+                        </div>
+                        <div class="d-inline mb-3 mx-5">
+                            <input class="form-check-input" name="Transporte" id="Transporte" type="checkbox"
+                                value="7" />
+                            <label for="form-check-label">Transporte</label>
+                        </div>
+                        <div class="d-inline mb-3">
+                            <input class="form-check-input" name="ProfIndependiente" id="ProfIndependiente"
+                                type="checkbox" value="8" />
+                            <label for="form-check-label">Prof. Independiente</label>
+                        </div>
+                        <br>
+                        <div class="d-inline mb-3">
+                            <input class="form-check-input" name="Manufacturera" id="Manufacturera" type="checkbox"
+                                value="9" />
+                            <label class="form-check-label">Ind. Manufacturera</label>
+                        </div>
+                        <div class="d-inline mb-3 mx-5">
+                            <input class="form-check-input" name="Energía" id="Energía" type="checkbox" value="6" />
+                            <label class="form-check-label">Energía</label>
+                        </div>
+                        <div class="d-inline mb-3">
+                            <input class="form-check-input" name="Salud" id="Salud" type="checkbox" value="6" />
+                            <label class="form-check-label">Salud</label>
+                        </div>
+                        <div class="d-inline mb-3 mx-5">
+                            <input class="form-check-input" name="Armadas" id="Armadas" type="checkbox" value="7" />
+                            <label for="form-check-label">F. Armadas/Segur.</label>
+                        </div>
+                        <div class="d-inline mb-3">
+                            <input class="form-check-input" name="Otro" id="Otro" type="checkbox" value="8" />
+                            <label for="form-check-label">Otro</label>
+                        </div>
+                    </div>
+                </div>
+                <!--otro sector-->
+                <div class="row gx-4 gx-lg-5 justify-content-center mb-3 form-section">
+                    <div class="col-12">
+                        <div class="form-floating mb-3">
+                            <input class="form-control" name="OtroSector" id="OtroSector" type="text"
+                                placeholder="Especificar otro Sector" />
+                            <label for="name">Especificar otro Sector:</label>
+                        </div>
+                    </div>
+                </div>
+                <!--hs trabajo, jubilacion-->
+                <div class="row gx-4 gx-lg-5 justify-content-start mb-3">
+                    <div class="col-6 d-grid justify-content-center">
+                        <label class="d-block mb-3">Horas de trabajo diario:</label>
+                        <div class="d-inline mb-3">
+                            <input class="form" name="hstrabajo" id="1a3" type="radio" value="0" />
+                            <label for="1a3">1 a 3 horas</label>
+                        </div>
+                        <div class="d-inline mb-3">
+                            <input class="form" name="hstrabajo" id="4a8" type="radio" value="1" checked />
+                            <label for="4a8">4 a 8 horas</label>
+                        </div>
+                        <div class="d-inline mb-3">
+                            <input class="form" name="hstrabajo" id="mas8" type="radio" value="2" checked />
+                            <label for="mas8">Mas de 8 horas</label>
+                        </div>
+                    </div>
+                    <div class="col-4 d-grid justify-content-start">
+                        <label class="d-block mb-3">¿Es Pensionado o Jubilado?</label>
+                        <div class="d-inline mb-3">
+                            <input class="form" name="Pensionadojubilado" id="PensionadojubiladoSI" type="radio"
+                                value="1" />
+                            <label for="PensionadojubiladoSI">SI</label>
+                        </div>
+                        <div class="d-inline mb-3">
+                            <input class="form" name="Pensionadojubilado" id="PensionadojubiladoNO" type="radio"
+                                value="0" checked />
+                            <label for="PensionadojubiladoNO">NO</label>
+                        </div>
+                    </div>
+                </div>
+
+                <h4 class="mb-3">Situacipon Familiar</h4>
+
+                <!--vive solo?-->
+                <div class="row gx-4 gx-lg-5 justify-content-center mb-3">
+                    <div class="col-6 d-grid justify-content-center">
+                        <label class="d-block ">¿Vive solo Actualmente?</label>
+                        <div class="d-inline ">
+                            <input class="form" name="vivesolo" id="vivesoloSI" type="radio" value="1" />
+                            <label for="vivesoloSI">SI</label>
+                        </div>
+                        <div class="d-inline mb-3">
+                            <input class="form" name="vivesolo" id="vivesoloNO" type="radio" value="0" checked />
+                            <label for="vivesoloNO">NO</label>
+                        </div>
+                    </div>
+                    <div class="col-6 d-grid justify-content-start ">
+                        <label class="d-block mb-3">Vive con:</label>
+                        <div class="d-inline mb-3">
+                            <input class="form" name="Padres" id="Padres" type="checkbox" value="0" />
+                            <label class="form" for="Padres">Con sus Padres</label>
+                        </div>
+                        <div class="d-inline mb-3">
+                            <input class="form" name="Conyugue" id="Conyugue" type="checkbox" value="1" />
+                            <label for="Conyugue">Con Conyugue o conviviente</label>
+                        </div>
+                        <div class="d-inline mb-3">
+                            <input class="form" name="Con_Hijos" id="Con_Hijos" type="checkbox" value="2" />
+                            <label for="Con_Hijos">Con Hijos</label>
+                        </div>
+                        <div class="d-inline mb-3">
+                            <input class="form" name="Otros" id="Otros" type="checkbox" value="3" />
+                            <label for="Otros">Otros</label>
+                        </div>
+                    </div>
+                </div>
+                <!--otros familiares?-->
+                <div class="row gx-4 gx-lg-5 justify-content-center mb-3">
+                    <div class="col-6 d-grid justify-content-center">
+                        <label class="d-block ">¿Tiene Familiares a su Cargo?</label>
+                        <div class="d-inline ">
+                            <input class="form" name="familiar_Cargo_" id="familiar_Cargo_si" type="radio" value="1" />
+                            <label for="familiar_Cargo_si">SI</label>
+                        </div>
+                        <div class="d-inline mb-3">
+                            <input class="form" name="familiar_Cargo_" id="familiar_Cargo_no" type="radio" value="0"
+                                checked />
+                            <label for="familiar_Cargo_no">NO</label>
+                        </div>
+                    </div>
+                    <div class="col-6 d-grid justify-content-start ">
+                        <label class="d-block mb-3">A cargo de:</label>
+                        <div class="d-inline mb-3">
+                            <input class="form" name="cargoPadres" id="cargoPadres" type="checkbox" value="0" />
+                            <label class="form" for="cargoPadres">Padres</label>
+                        </div>
+                        <div class="d-inline mb-3">
+                            <input class="form" name="cargoHijos" id="cargoHijos" type="checkbox" value="2" />
+                            <label for="cargoHijos">Hijos</label>
+                        </div>
+                        <div class="d-inline mb-3">
+                            <input class="form" name="cargoOtros" id="cargoOtros" type="checkbox" value="3" />
+                            <label for="cargoOtros">Otros</label>
+                        </div>
+                    </div>
+                </div>
+
+                <h4 class="mb-3">Condición frente a Becas o Programas</h4>
+
+                <!--beca o programa-->
+                <div class="row gx-4 gx-lg-5 justify-content-start mb-3">
+                    <div class="col-12 ">
+                        <label class="d-block mb-3">¿Tiene alguna Beca o Programa?</label>
+                        <div class="d-inline mb-3">
+                            <input class="form-check-input" name="Educacion" id="Educacion" type="checkbox" value="0" />
+                            <label class="form-check-label">Ninguno</label>
+                        </div>
+                        <div class="d-inline mb-3 mx-5">
+                            <input class="form-check-input" name="SectorPúblico" id="SectorPúblico" type="checkbox"
+                                value="1" />
+                            <label for="form-check-label">Estímulos económicos (INFD)</label>
+                        </div>
+                        <div class="d-inline mb-3">
+                            <input class="form-check-input" name="PrimariaCompleta" id="PrimariaCompleta"
+                                type="checkbox" value="2" />
+                            <label for="form-check-label">Becas Bicentenario.</label>
+                        </div>
+                        <div class="d-inline mb-3 mx-5">
+                            <input class="form-check-input" name="Turismo" id="Turismo" type="checkbox" value="3" />
+                            <label class="form-check-label">Pueblos originarios</label>
+                        </div>
+                        <div class="d-inline mb-3">
+                            <input class="form-check-input" name="SectorAgropecuario" id="SectorAgropecuario"
+                                type="checkbox" value="4" />
+                            <label for="form-check-label">Progresar</label>
+                        </div>
+                        <br>
+                        <div class="d-inline mb-3">
+                            <input class="form-check-input" name="Educacion" id="Educacion" type="checkbox" value="0" />
+                            <label class="form-check-label">AUH</label>
+                        </div>
+                        <div class="d-inline mb-3 mx-5">
+                            <input class="form-check-input" name="SectorPúblico" id="SectorPúblico" type="checkbox"
+                                value="1" />
+                            <label for="form-check-label">Compromiso docente</label>
+                        </div>
+                        <div class="d-inline mb-3">
+                            <input class="form-check-input" name="PrimariaCompleta" id="PrimariaCompleta"
+                                type="checkbox" value="2" />
+                            <label for="form-check-label">Programa Envión</label>
+                        </div>
+                        <div class="d-inline mb-3 mx-5">
+                            <input class="form-check-input" name="Turismo" id="Turismo" type="checkbox" value="3" />
+                            <label class="form-check-label">Argentina trabaja</label>
+                        </div>
+                        <div class="d-inline mb-3">
+                            <input class="form-check-input" name="SectorAgropecuario" id="SectorAgropecuario"
+                                type="checkbox" value="4" />
+                            <label for="form-check-label">Ellas hacen</label>
+                        </div>
+                    </div>
+                </div>
+
+                <h4 class="mb-3">Prácticas Culturales o Cotidianas</h4>
+
+                <!--practicas culturales-->
+                <div class="row gx-4 gx-lg-5 justify-content-start mb-3">
+                    <!--radio-->
+                    <div class="col-2 d-grid justify-content-start">
+                        <label class="d-block mb-3">¿Escucha la Radio?:</label>
+                        <div class="d-inline mb-3">
+                            <input class="form" name="radio" id="radiosi" type="radio" value="0" />
+                            <label for="radiosi">SI</label>
+                        </div>
+                        <div class="d-inline mb-3">
+                            <input class="form" name="radio" id="radioNO" type="radio" value="1" checked />
+                            <label for="radioNO">NO</label>
+                        </div>
+                    </div>
+                    <!--tv-->
+                    <div class="col-2 d-grid justify-content-start">
+                        <label class="d-block mb-3">¿Mira TV?</label>
+                        <div class="d-inline mb-3">
+                            <input class="form" name="tv" id="tvsi" type="radio" value="1" />
+                            <label for="tvsi">SI</label>
+                        </div>
+                        <div class="d-inline mb-3">
+                            <input class="form" name="tv" id="tvno" type="radio" value="0" checked />
+                            <label for="tvno">NO</label>
+                        </div>
+                    </div>
+                    <!--teatro-->
+                    <div class="col-2 d-grid justify-content-start">
+                        <label class="d-block mb-3">¿Asiste al Teatro?</label>
+                        <div class="d-inline mb-3">
+                            <input class="form" name="teatro" id="teatrosi" type="radio" value="1" />
+                            <label for="teatrosi">SI</label>
+                        </div>
+                        <div class="d-inline mb-3">
+                            <input class="form" name="teatro" id="teatrono" type="radio" value="0" checked />
+                            <label for="teatrono">NO</label>
+                        </div>
+                    </div>
+                    <!--museo-->
+                    <div class="col-2 d-grid justify-content-start">
+                        <label class="d-block mb-3">¿Asiste a Museos?</label>
+                        <div class="d-inline mb-3">
+                            <input class="form" name="museo" id="tmuseosisi" type="radio" value="1" />
+                            <label for="museosi">SI</label>
+                        </div>
+                        <div class="d-inline mb-3">
+                            <input class="form" name="museo" id="museono" type="radio" value="0" checked />
+                            <label for="museono">NO</label>
+                        </div>
+                    </div>
+                    <!--conciertos-->
+                    <div class="col-2 d-grid justify-content-start">
+                        <label class="d-block mb-3">¿Asiste a Conciertos?</label>
+                        <div class="d-inline mb-3">
+                            <input class="form" name="concierto" id="tvconciertosisi" type="radio" value="1" />
+                            <label for="tconciertosivsi">SI</label>
+                        </div>
+                        <div class="d-inline mb-3">
+                            <input class="form" name="concierto" id="conciertono" type="radio" value="0" checked />
+                            <label for="conciertono">NO</label>
+                        </div>
+                    </div>
+                    <!--lectura frecuente-->
+                    <div class="col-2 d-grid justify-content-start">
+                        <label class="d-block mb-3">¿Realiza lecturas frecuentes?</label>
+                        <div class="d-inline mb-3">
+                            <input class="form" name="lectura" id="lecturasi" type="radio" value="1" />
+                            <label for="lecturasi">SI</label>
+                        </div>
+                        <div class="d-inline mb-3">
+                            <input class="form" name="lectura" id="lecturano" type="radio" value="0" checked />
+                            <label for="lecturano">NO</label>
+                        </div>
+                    </div>
+                    <!--tipo lectura-->
+                    <div class="col-6 d-grid justify-content-center ">
+                        <label class="d-block mb-3">Tipo de lectura frecuente:</label>
+                        <div class="d-inline mb-3">
+                            <input class="form" name="Diarios" id="Diarios" type="checkbox" value="0" />
+                            <label class="form" for="Diarios">Diarios</label>
+                        </div>
+                        <div class="d-inline mb-3">
+                            <input class="form" name="Revistas" id="Revistas" type="checkbox" value="2" />
+                            <label for="Revistas">Revistas</label>
+                        </div>
+                        <div class="d-inline mb-3">
+                            <input class="form" name="Libros" id="Libros" type="checkbox" value="3" />
+                            <label for="Libros">Libros</label>
+                        </div>
+                    </div>
+                    <!--lestura especializada-->
+                    <div class="col-6 d-grid justify-content-start ">
+                        <label class="d-block mb-3">¿Realiza lectura especializada?</label>
+                        <div class="d-inline mb-3">
+                            <input class="form" name="SI" id="SI" type="checkbox" value="0" />
+                            <label class="form" for="SI">SI</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input class="form-control" name="prácticas_culturales" id="prácticas_culturales"
+                                type="text" placeholder="prácticas_culturales" />
+                            <label for="name">Otras prácticas culturales:</label>
+                        </div>
+                    </div>
+                    <!--internet-->
+                    <div class="col-6 d-grid justify-content-start">
+                        <label class="d-block mb-3">¿Utiliza Internet?</label>
+                        <div class="d-inline mb-3">
+                            <input class="form" name="Internet" id="Internetsi" type="radio" value="1" />
+                            <label for="Internetsi">SI</label>
+                        </div>
+                        <div class="d-inline mb-3">
+                            <input class="form" name="Internet" id="Internetno" type="radio" value="0" checked />
+                            <label for="Internetno">NO</label>
+                        </div>
+                    </div>
+                    <!--donde utiliza internet-->
+                    <div class="col-6  justify-content-center ">
+                        <label class="d-block mb-3">¿Dónde utiliza Internet?</label>
+                        <div class="d-inline mb-3">
+                            <input class="form" name="Hogar" id="Hogar" type="checkbox" value="0" />
+                            <label class="form" for="Hogar">Hogar</label>
+                        </div>
+                        <div class="d-inline mb-3 mx-5">
+                            <input class="form" name="Lugar_trabajo" id="Lugar_trabajo" type="checkbox" value="2" />
+                            <label for="Lugar_trabajo">Lugar de trabajo</label>
+                        </div>
+                        <div class="d-inline mb-3">
+                            <input class="form" name="Ámbito_educativo" id="Ámbito_educativo" type="checkbox"
+                                value="3" />
+                            <label for="Ámbito_educativo">Ámbito educativo</label>
+                        </div>
+                        <div class="d-inline mb-3 mx-5">
+                            <input class="form" name="Celular" id="Celular" type="checkbox" value="4" />
+                            <label class="form" for="Celular">Celular</label>
+                        </div>
+                        <div class="d-inline mb-3">
+                            <input class="form" name="Cyber" id="Cyber" type="checkbox" value="5" />
+                            <label for="Cyber">Cyber</label>
+                        </div>
+                        <div class="d-inline mb-3 mx-5">
+                            <input class="form" name="Otro" id="Otro" type="checkbox" value="6" />
+                            <label for="Otro">Otro</label>
+                        </div>
+                    </div>
+                    <!--redes sociales-->
+                    <div class="col-6 d-grid justify-content-start">
+                        <label class="d-block mb-3">¿Usa redes sociales?</label>
+                        <div class="d-inline mb-3">
+                            <input class="form" name="redes" id="redessi" type="radio" value="1" />
+                            <label for="redessi">SI</label>
+                        </div>
+                        <div class="d-inline mb-3">
+                            <input class="form" name="redes" id="redesno" type="radio" value="0" checked />
+                            <label for="redesno">NO</label>
+                        </div>
+                    </div>
+                    <!--donde utiliza redes-->
+                    <div class="col-6 justify-content-center ">
+                        <label class="d-block mb-3">Redes Sociales que utiliza:</label>
+                        <div class="d-inline mb-3">
+                            <input class="form" name="Facebook" id="Facebook" type="checkbox" value="0" />
+                            <label class="form" for="Facebook">Facebook</label>
+                        </div>
+                        <div class="d-inline mb-3 mx-5">
+                            <input class="form" name="Twitter" id="Twitter" type="checkbox" value="2" />
+                            <label for="Twitter">Twitter</label>
+                        </div>
+                        <div class="d-inline mb-3 mx-5">
+                            <input class="form" name="Linkedin" id="Linkedin" type="checkbox" value="3" />
+                            <label for="Linkedin">Linkedin</label>
+                        </div>
+                        <div class="d-inline mb-3 mx-5">
+                            <input class="form" name="Instagram" id="Instagram" type="checkbox" value="4" />
+                            <label class="form" for="Instagram">Instagram</label>
+                        </div>
+                        <div class="d-inline mb-3">
+                            <input class="form" name="Snapchat" id="Snapchat" type="checkbox" value="5" />
+                            <label for="Snapchat">Snapchat</label>
+                        </div>
+                        <div class="d-inline mb-3 mx-5">
+                            <input class="form" name="Otra" id="Otra" type="checkbox" value="6" />
+                            <label for="Otra">Otra</label>
+                        </div>
+                    </div>
+                    <!--sitios frecuentados-->
+                    <div class="col-12 justify-content-start">
+                        <label class="d-block mb-3">Sitios frecuentados:</label>
+                        <div class="d-inline mb-3">
+                            <input class="form" name="Correo" id="Correo" type="checkbox" value="0" />
+                            <label class="form" for="Correo">Correo electrónico</label>
+                        </div>
+                        <div class="d-inline mb-3 mx-5">
+                            <input class="form" name="Buscadores" id="Buscadores" type="checkbox" value="2" />
+                            <label for="Buscadores">Buscadores</label>
+                        </div>
+                        <div class="d-inline mb-3 mx-5">
+                            <input class="form" name="Reservorios_información" id="Reservorios_información"
+                                type="checkbox" value="3" />
+                            <label for="Reservorios_información">Reservorios de información</label>
+                        </div>
+                        <div class="d-inline mb-3 mx-5">
+                            <input class="form" name="Diarios_revistas" id="Diarios_revistas" type="checkbox"
+                                value="4" />
+                            <label class="form" for="Diarios_revistas">Diarios y revistas</label>
+                        </div>
+                        <div class="d-inline mb-3">
+                            <input class="form" name="ABC" id="ABC" type="checkbox" value="5" />
+                            <label for="ABC">Portal ABC</label>
+                        </div>
+                        <div class="d-inline mb-3 mx-5">
+                            <input class="form" name="Otros" id="Otros" type="checkbox" value="6" />
+                            <label for="Otros">Otros</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input class="form-control" name="OtroSector" id="OtroSector" type="text"
+                                placeholder="Especificar otro Sector" />
+                            <label for="name">Especificar otro Sector:</label>
+                        </div>
+                    </div>
+                    <!--rparticipaciones-->
+                    <div class="col-12 d-grid">
+                        <label class="d-block mb-3">Participaciones:</label>
+                        <div class="d-inline mb-3">
+                            <input class="form-check-input" name="integrado_Consejo_Académico"
+                                id="integrado_Consejo_Académico" type="checkbox" value="0" />
+                            <label class="form-check-label">Ha integrado el Consejo Académico Institucional</label>
+                        </div>
+                        <div class="d-inline mb-3">
+                            <input class="form-check-input" name="integra_Consejo_Académico"
+                                id="integra_Consejo_Académico" type="checkbox" value="1" />
+                            <label for="form-check-label">Integra actualmente el Consejo Académico Institucional</label>
+                        </div>
+                        <div class="d-inline mb-3">
+                            <input class="form-check-input" name="Formó_Centro_Estudiantes"
+                                id="Formó_Centro_Estudiantes" type="checkbox" value="2" />
+                            <label for="form-check-label">Formó parte del Centro de Estudiantes</label>
+                        </div>
+                        <div class="d-inline mb-3">
+                            <input class="form-check-input" name="Forma_Centro_Estudiantes"
+                                id="Forma_Centro_Estudiantes" type="checkbox" value="3" />
+                            <label class="form-check-label">Forma parte actualmente del Centro de Estudiantes</label>
+                        </div>
+                    </div>
+                </div>
+
+                <h4 class="mb-3">Ficha de Salud - en caso de Emergencia</h4>
+
+                <!--obra social-->
+                <div class="row gx-4 gx-lg-5 justify-content-start mb-3">
+                    <div class="col-6 ">
+                        <label class="d-block mb-3">Obra Social Prepaga:</label>
+                        <div class="d-inline mb-3">
+                            <input class="form" name="obra_prepaga" id="obra_prepagasi" type="radio" value="1" />
+                            <label for="obra_prepagasi">SI</label>
+                        </div>
+
+                        <div class="d-inline mb-3">
+                            <input class="form" name="obra_prepaga" id="obra_prepagano" type="radio" value="0"
+                                checked />
+                            <label for="obra_prepagano">NO</label>
+                        </div>
+                    </div>
+                </div>
+                <!--descripcion obra social-->
+                <div class="row gx-4 gx-lg-5 justify-content-center mb-3 form-section">
+                    <div class="col-12">
+                        <div class="form-floating mb-3">
+                            <input class="form-control" name="descripcion_obra_social" id="descripcion_obra_social"
+                                type="text" placeholder="descripcion_obra_social" />
+                            <label for="name">Descripción de la Obra Social:</label>
+                        </div>
+                    </div>
+                </div>
+                <!--Tratamiento_Médico-->
+                <div class="row gx-4 gx-lg-5 justify-content-start mb-3">
+                    <div class="col-6 ">
+                        <label class="d-block mb-3">Tratamiento Médico:</label>
+                        <div class="d-inline mb-3">
+                            <input class="form" name="Tratamiento_Médico" id="Tratamiento_Médicosi" type="radio"
+                                value="1" />
+                            <label for="Tratamiento_Médicosi">SI</label>
+                        </div>
+
+                        <div class="d-inline mb-3">
+                            <input class="form" name="Tratamiento_Médico" id="Tratamiento_Médicono" type="radio"
+                                value="0" checked />
+                            <label for="Tratamiento_Médicono">NO</label>
+                        </div>
+                    </div>
+                </div>
+                <!--descripcion_Tratamiento_Médico-->
+                <div class="row gx-4 gx-lg-5 justify-content-center mb-3 form-section">
+                    <div class="col-12">
+                        <div class="form-floating mb-3">
+                            <input class="form-control" name="descripcion_Tratamiento_Médico"
+                                id="descripcion_Tratamiento_Médico" type="text"
+                                placeholder="descripcion_Tratamiento_Médico" />
+                            <label for="name">Descripción del Tratamiento Médico:</label>
+                        </div>
+                    </div>
+                </div>
+                <!--Medicación:-->
+                <div class="row gx-4 gx-lg-5 justify-content-start mb-3">
+                    <div class="col-6 ">
+                        <label class="d-block mb-3">Medicación:</label>
+                        <div class="d-inline mb-3">
+                            <input class="form" name="Medicación" id="Medicaciónsi" type="radio" value="1" />
+                            <label for="Medicaciónsi">SI</label>
+                        </div>
+
+                        <div class="d-inline mb-3">
+                            <input class="form" name="Medicación" id="Medicaciónno" type="radio" value="0" checked />
+                            <label for="Medicaciónno">NO</label>
+                        </div>
+                    </div>
+                </div>
+                <!--Descripción de la Medicación:-->
+                <div class="row gx-4 gx-lg-5 justify-content-center mb-3 form-section">
+                    <div class="col-12">
+                        <div class="form-floating mb-3">
+                            <input class="form-control" name="descripcion_Medicación" id="descripcion_Medicación"
+                                type="text" placeholder="descripcion_Medicación" />
+                            <label for="name">Descripción de la Medicación:</label>
+                        </div>
+                    </div>
+                </div>
+                <!--Discapacidad:-->
+                <div class="row gx-4 gx-lg-5 justify-content-start mb-3">
+                    <div class="col-6 ">
+                        <label class="d-block mb-3">Discapacidad:</label>
+                        <div class="d-inline mb-3">
+                            <input class="form" name="Discapacidad" id="Discapacidadsi" type="radio" value="1" />
+                            <label for="Discapacidadsi">SI</label>
+                        </div>
+
+                        <div class="d-inline mb-3">
+                            <input class="form" name="Discapacidad" id="Discapacidadno" type="radio" value="0"
+                                checked />
+                            <label for="Discapacidadno">NO</label>
+                        </div>
+                    </div>
+                </div>
+                <!--Descripción de la Discapacidad:-->
+                <div class="row gx-4 gx-lg-5 justify-content-center mb-3 form-section">
+                    <div class="col-12">
+                        <div class="form-floating mb-3">
+                            <input class="form-control" name="descripcion_Discapacidad" id="descripcion_Discapacidad"
+                                type="text" placeholder="descripcion_Discapacidad" />
+                            <label for="name">Descripción de la Discapacidad:</label>
+                        </div>
+                    </div>
+                </div>
+                <!--Estado de la Discapacidad:-->
+                <div class="row gx-4 gx-lg-5 justify-content-center mb-3 form-section">
+                    <div class="col-12">
+                        <div class="form-floating mb-3">
+                            <input class="form-control" name="Estado_Discapacidad" id="Estado_Discapacidad"
+                                type="text" placeholder="Estado_Discapacidad:" />
+                            <label for="name">Estado de la Discapacidad:</label>
+                        </div>
+                    </div>
+                </div>
+                <!--Certificado:-->
+                <div class="row gx-4 gx-lg-5 justify-content-start mb-3">
+                    <div class="col-6 ">
+                        <label class="d-block mb-3">Certificado:</label>
+                        <div class="d-inline mb-3">
+                            <input class="form" name="Certificado" id="Certificadosi" type="radio" value="1" />
+                            <label for="Certificadosi">SI</label>
+                        </div>
+
+                        <div class="d-inline mb-3">
+                            <input class="form" name="Certificado" id="Certificadono" type="radio" value="0"
+                                checked />
+                            <label for="Certificadono">NO</label>
+                        </div>
+                    </div>
+                </div>
+                <!--Contacto en Caso de Emergencia::-->
+                <div class="row gx-4 gx-lg-5 justify-content-center mb-3 form-section">
+                    <div class="col-12">
+                        <div class="form-floating mb-3">
+                            <input class="form-control" name="Contacto_Emergencia" id="Contacto_Emergencia"
+                                type="text" placeholder="Contacto_Emergencia:" />
+                            <label for="name">Contacto en Caso de Emergencia:</label>
+                        </div>
+                    </div>
+                </div>
+                <!--Teléfono de Contacto:-->
+                <div class="row gx-4 gx-lg-5 justify-content-center mb-3 form-section">
+                    <div class="col-12">
+                        <div class="form-floating mb-3">
+                            <input class="form-control" name="tel_contacto" id="tel_contacto"
+                                type="text" placeholder="tel_contacto" />
+                            <label for="name">Teléfono de Contacto:</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="d-flex justify-content-center m-3"> 
+                    <button type="submit" class="btn btn-primary">Inscribirse</button>
+                </div> 
+
+            </form>
+        </div>
+    </section>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
